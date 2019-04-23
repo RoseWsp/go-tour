@@ -44,10 +44,8 @@ func TestAppend(t *testing.T) {
 
 	/*
 		得出结论 何时扩容，扩容的大小是如何界定的
-		1. 长度超过容量时就会扩容 , append 元素时，slice的长度超过底层数组容量时，就会扩容
-		2. 扩容的大小，扩容后容量是扩容前的1倍 new cap = 2 * old cap
+		扩容后的 cap 为扩容之前的1倍 ,即 new cap = 2 * old cap,如果len 超过了 new cap ,那么new cap = len + len % 2
 	*/
-
 }
 
 func printSlice(s []int) {
