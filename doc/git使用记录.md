@@ -4,3 +4,4 @@
 3. 推送至远程仓库 git push -u origin master
 
 4. git status ,git add ,git commit -m ,git reset -–hard
+
